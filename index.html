@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FULL MODA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/univers-next" rel="stylesheet">
+</head>
+<body>
+    <!-- ===== HEADER =====-->
+    <header class="header">
+        <div class="container">
+            <!-- Botón de menú móvil -->
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="assets/img/ChatGPT logo Fullmoda.png" alt="FULL MODA" class="logo-icon">
+                    <span class="logo-text">FULL MODA</span>
+                </a>
+            </div>
+            
+            <nav class="nav">
+                <!-- Botón de cerrar (X) para móvil -->
+                <button class="mobile-close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            
+                <ul class="nav-menu">
+                    <li class="menu-item">
+                        <div class="mobile-menu-header">
+                            <a href="#">Inicio</a>
+                            <span class="mobile-expand">›</span>
+                        </div>
+                    </li>
+
+                    <li class="menu-item">
+                        <div class="mobile-menu-header">
+                            <a href="catalogo.html">Catalogo</a>
+                            <span class="mobile-expand">›</span>
+                        </div>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="#">Polos</a></li>
+                                <li><a href="#">Bermudas</a></li>
+                                <li><a href="#">Pantalones</a></li>
+                                <li><a href="#">Zapatillas</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="mobile-menu-header">
+                            <a href="#">contacto</a>
+                            <span class="mobile-expand">›</span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="hero-carousel">
+            <div class="hero-slides">
+                <!-- Slide 1 -->
+                <div class="hero-slide active">
+                    <img src="assets/img/panorama1.jpg" alt="Tienda de moda" class="slide-image">
+                    <div class="slide-overlay"></div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="hero-slide">
+                    <img src="assets/img/panorama2.jpg" alt="Colección de moda" class="slide-image">
+                    <div class="slide-overlay"></div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="hero-slide">
+                    <img src="assets/img/tienda-de-ropa-tienda-de-ropa-en-perchas-en-la-tienda-boutique-moderna.jpg" alt="Ofertas de moda" class="slide-image">
+                    <div class="slide-overlay"></div>
+                </div>
+            </div>
+            
+            <!-- Controles e indicadores -->
+            <button class="carousel-control prev" aria-label="Slide anterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-control next" aria-label="Slide siguiente">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <div class="carousel-indicators">
+                <button class="indicator active" aria-label="Ir al slide 1"></button>
+                <button class="indicator" aria-label="Ir al slide 2"></button>
+                <button class="indicator" aria-label="Ir al slide 3"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCION DE OFERTAS ===== -->
+    <section class="ofertas-section">
+        <div class="container-ofertas">
+            <h1>DESCUBRE NUESTRAS OFERTAS EN PRODUCTOS</h1>
+            <div class="grid-ofertas">
+                <!-- Cajón de Polos -->
+                <div class="cajon-producto cajon-polos">
+                    <a href="tu-url-catalogo-polos" class="enlace-completo"></a>
+                    <div class="precio-etiqueta">S/ 35</div>
+                    <img src="assets/img/Polos/polo-cajon.jpg" alt="Ofertas en Polos">
+                    <div class="producto-overlay">
+                        <h3 class="producto-titulo">POLOS</h3>
+                        <p class="producto-desc">Descubre nuestra colección de polos desde S/35 en seleccionados.</p>
+                    </div>
+                </div>
+                
+                <!-- Cajón de Shorts -->
+                <div class="cajon-producto cajon-shorts">
+                    <a href="tu-url-catalogo-shorts" class="enlace-completo"></a>
+                    <div class="precio-etiqueta">S/ 75</div>
+                    <img src="assets/img/Shorts/short.cajon.png" alt="Ofertas en Shorts">
+                    <div class="producto-overlay">
+                        <h3 class="producto-titulo">SHORTS</h3>
+                        <p class="producto-desc">Shorts de calle con las mejores ofertas.</p>
+                    </div>
+                </div>
+                
+                <!-- Cajón de Zapatillas -->
+                <div class="cajon-producto cajon-zapatillas">
+                    <a href="tu-url-catalogo-zapatillas" class="enlace-completo"></a>
+                    <div class="precio-etiqueta">S/ 120</div>
+                    <img src="assets/img/Zapatillas/zapatillas-endo-run.png" alt="Ofertas en Zapatillas">
+                    <div class="producto-overlay">
+                        <h3 class="producto-titulo">ZAPATILLAS</h3>
+                        <p class="producto-desc">Las mejores marcas con precios exclusivos.</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CINTA PROMOCIONAL ===== -->
+    <section class="cinta-promocional">
+        <div class="scrolling-content-container">
+            <div class="scrolling-content-content">
+                <span>Aprovecha las ofertas de 3 x 2 </span>
+                <span>¡Puedes Pagar con Yape!</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCION CATEGORIAS ===== -->
+    <section class="categorias-section">
+        <div class="container-categorias">
+            <h2 class="titulo-seccion">Explora nuestras categorías</h2>
+            
+            <div class="grid-categorias-doble">
+                <!-- Categoría Hombre -->
+                <div class="categoria-card grande">
+                    <div class="categoria-imagen-container">
+                        <img src="assets/img/el.png" alt="Ropa para hombre" class="categoria-imagen">
+                    </div>
+                    <div class="categoria-contenido">
+                        <h3 class="categoria-titulo">HOMBRE</h3>
+                        <a href="hombres.html" class="btn-categoria">Ver colección</a>
+                    </div>
+                </div>
+                
+                <!-- Categoría Mujer -->
+                <div class="categoria-card grande">
+                    <div class="categoria-imagen-container">
+                        <img src="assets/img/ella.png" alt="Ropa para mujer" class="categoria-imagen">
+                    </div>
+                    <div class="categoria-contenido">
+                        <h3 class="categoria-titulo">MUJER</h3>
+                        <a href="Mujeres.html" class="btn-categoria">Ver colección</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BANNER PROMOCIONAL ===== -->
+    <section class="banner-promo-section">
+        <div class="container-banner">
+            <!-- Banner Desktop (1350x239px) -->
+            <a href="tu-url-promo" class="banner-link">
+                <img src="assets/img/banner-escritorio.png" 
+                    alt="Oferta exclusiva" 
+                    class="banner-desktop"
+                    width="1350" 
+                    height="239">
+            </a>
+            
+            <!-- Banner Mobile (422x190px) -->
+            <a href="tu-url-promo" class="banner-link">
+                <img src="assets/img/banner-movil.png" 
+                    alt="Oferta exclusiva" 
+                    class="banner-mobile"
+                    width="422" 
+                    height="190">
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== SECCION UBICACION & HORARIOS ===== -->
+    <section class="location-history">
+        <div class="container">
+            <div class="grid-layout">
+                <!-- Mapa Pucallpa -->
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d986.7564853537448!2d-74.53701753038418!3d-8.399108972756368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a3bc50cb94a01d%3A0x5fd8f7d60363623a!2s2500%2C%20Los%20Ceticos%20494%2C%20Pucallpa%2025001!5e0!3m2!1ses-419!2spe!4v1744479927538!5m2!1ses-419!2spe" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        aria-label="Ubicación de FULL MODA en Los Ceticos 494, Pucallpa">
+                    </iframe>
+                    <div class="map-footer">
+                        <p class="map-caption">
+                            <i class="fas fa-map-marker-alt"></i> Jr.Los Ceticos 494, Manantay
+                        </p>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=-8.399058484549798, -74.53637347482781&travelmode=driving" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="map-button">
+                            Ir <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Horario -->
+                <div class="schedule-container">
+                    <h2 class="section-title">Horario de atención</h2>
+                    <div class="schedule-content">
+                        <div class="schedule-item">
+                            <span class="schedule-days">Lunes a Viernes:</span>
+                            <span class="schedule-hours">08:00 a.m. - 7:30 p.m.</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-days">Viernes a Sábado:</span>
+                            <span class="schedule-hours">09:00 a.m. - 01:00 p.m.</span>
+                        </div>
+                        <div class="contact-info">
+                            <p><i class="fas fa-phone"></i> Teléfono: +51 957 086 227</p>
+                            <p><i class="fab fa-whatsapp"></i> Contáctanos por Whatsapp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- BOTON "VOLVER ARRIBA" -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- =====WHATSAPP FLOTANTE===== -->
+    <a href="https://wa.me/+51974684266" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Columna 1 -->
+                <div class="footer-col">
+                    <div class="logo-footer">
+                        <img src="assets/img/ChatGPT logo Fullmoda.png" alt="FULL MODA">
+                    </div>
+                    <p>Desde 2025 vistiendo a Pucallpa con estilo urbano y calidad.</p>
+                </div>
+                
+                <!-- Columna 2 -->
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <ul class="contacto-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Jr. Los Ceticos 494, Manantay</li>
+                        <li><i class="fas fa-phone"></i> (061) 123456</li>
+                        <li><i class="fas fa-envelope"></i> tomgalan@gmail.com</li>
+                    </ul>
+                </div>
+                
+                <!-- Columna 3 -->
+                <div class="footer-col">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/2015tomohito/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100009358405120" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@tomgalan" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 FULL MODA. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>
