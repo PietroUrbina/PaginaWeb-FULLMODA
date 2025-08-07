@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | FULL MODA</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../catalogo/catalogo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/univers-next" rel="stylesheet">
+</head>
+<body>
+    <!-- ===== NAVBAR TRANSPARENTE ===== -->
+    <header class="header header-transparent">
+        <div class="container">
+            <!-- Botón de menú móvil -->
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="logo-container">
+                <a href="../index.html" class="logo-link">
+                    <img src="../assets/img/ChatGPT logo Fullmoda.png" alt="FULL MODA" class="logo-icon">
+                    <span class="logo-text">FULL MODA</span>
+                </a>
+            </div>
+            
+            <nav class="nav">
+                <!-- Botón de cerrar (X) para móvil -->
+                <button class="mobile-close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            
+                <ul class="nav-menu">
+                    <li class="menu-item">
+                        <div class="mobile-menu-header">
+                            <a href="../index.html">Inicio</a>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="mobile-menu-header">
+                            <a href="Catalogo.html">Catálogo</a>
+                            <span class="mobile-expand">›</span>
+                        </div>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="categorias/hombres/">Hombre</a></li>
+                                <li><a href="categorias/mujeres/">Mujer</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="mobile-menu-header">
+                            <a href="../contacto.html">Contacto</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== SECCIÓN POR GÉNERO ===== -->
+    <section class="seccion-genero">
+        <div class="container">
+            <h2 class="titulo-seccion">POR GÉNERO</h2>
+            <div class="botones-genero">
+                <a href="categorias/hombres/" class="btn-genero btn-hombre">
+                    <div class="btn-content">
+                        <i class="fas fa-male"></i>
+                        <span>HOMBRE</span>
+                        <p>Desde S/35</p>
+                    </div>
+                </a>
+                <a href="categorias/mujeres/" class="btn-genero btn-mujer">
+                    <div class="btn-content">
+                        <i class="fas fa-female"></i>
+                        <span>MUJER</span>
+                        <p>Desde S/40</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN CATEGORÍAS ===== -->
+    <section class="seccion-categorias">
+        <div class="container">
+            <h2 class="titulo-seccion">CATEGORÍAS</h2>
+            <div class="grid-categorias">
+                <a href="categorias/hombres/polos.html" class="categoria-card">
+                    <img src="assets/img/Polos/polo-cajon.jpg" alt="Polos">
+                    <div class="categoria-info">
+                        <h3>POLOS</h3>
+                        <p>Desde S/35</p>
+                    </div>
+                </a>
+                <a href="categorias/hombres/bermudas.html" class="categoria-card">
+                    <img src="assets/img/Shorts/short.cajon.png" alt="Bermudas">
+                    <div class="categoria-info">
+                        <h3>BERMUDAS</h3>
+                        <p>Desde S/75</p>
+                    </div>
+                </a>
+                <a href="categorias/hombres/pantalones.html" class="categoria-card">
+                    <img src="assets/img/Pantalones/pantalon-cajon.jpg" alt="Pantalones">
+                    <div class="categoria-info">
+                        <h3>PANTALONES</h3>
+                        <p>Desde S/90</p>
+                    </div>
+                </a>
+                <a href="categorias/hombres/zapatillas.html" class="categoria-card">
+                    <img src="assets/img/Zapatillas/zapatillas-endo-run.png" alt="Zapatillas">
+                    <div class="categoria-info">
+                        <h3>ZAPATILLAS</h3>
+                        <p>Desde S/120</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN PRODUCTOS ===== -->
+    <section class="seccion-productos">
+        <div class="container">
+            <!-- Paginación superior -->
+            <div class="paginacion-superior">
+                <div class="paginacion-container">
+                    <a href="#" class="pagina-activa">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">Siguiente →</a>
+                </div>
+                <!-- Filtro -->
+                <div class="filtro-container">
+                    <label for="filtro">Filtrar por:</label>
+                    <select id="filtro">
+                        <option value="popular">Más populares</option>
+                        <option value="nuevos">Más nuevos</option>
+                        <option value="precio-asc">Precio: menor a mayor</option>
+                        <option value="precio-desc">Precio: mayor a menor</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Grid de productos (3 filas x 4 columnas) -->
+            <div class="grid-productos">
+                <!-- Producto 1 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="../assets/img/Polos/polo-amarillooscuro-nautica.jpg" alt="Polo básico negro">
+                        <div class="producto-badge">Nuevo</div>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Polo Básico Negro</h3>
+                        <div class="producto-precio">
+                            <span class="precio-actual">S/35</span>
+                            <span class="precio-anterior">S/45</span>
+                        </div>
+                        <a href="#" class="btn-producto">Ver Detalles</a>
+                    </div>
+                </div>
+                
+                <!-- Producto 2 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="../assets/img/Polos/polo-celeste-lacost.jpg" alt="Polo estampado">
+                        <div class="producto-badge">-20%</div>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Polo Estampado</h3>
+                        <div class="producto-precio">
+                            <span class="precio-actual">S/40</span>
+                            <span class="precio-anterior">S/50</span>
+                        </div>
+                        <a href="#" class="btn-producto">Ver Detalles</a>
+                    </div>
+                </div>
+                
+                <!-- Repetir para 12 productos total (3x4) -->
+                <!-- ... -->
+            </div>
+
+            <!-- Paginación inferior -->
+            <div class="paginacion-inferior">
+                <div class="paginacion-container">
+                    <a href="#" class="pagina-activa">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">Siguiente →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN PUBLICIDAD ===== -->
+    <section class="seccion-publicidad">
+        <div class="container">
+            <div class="banner-publicidad">
+                <img src="assets/img/banner-marcas.jpg" alt="Marcas disponibles en FULL MODA">
+            </div>
+        </div>
+    </section>
+
+     <!-- BOTON "VOLVER ARRIBA" -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- =====WHATSAPP FLOTANTE===== -->
+    <a href="https://wa.me/+51974684266" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Columna 1 -->
+                <div class="footer-col">
+                    <div class="logo-footer">
+                        <img src="assets/img/ChatGPT logo Fullmoda.png" alt="FULL MODA">
+                    </div>
+                    <p>Desde 2025 vistiendo a Pucallpa con estilo urbano y calidad.</p>
+                </div>
+                
+                <!-- Columna 2 -->
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <ul class="contacto-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Jr. Los Ceticos 494, Manantay</li>
+                        <li><i class="fas fa-phone"></i> (061) 123456</li>
+                        <li><i class="fas fa-envelope"></i> tomgalan@gmail.com</li>
+                    </ul>
+                </div>
+                
+                <!-- Columna 3 -->
+                <div class="footer-col">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/2015tomohito/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100009358405120" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@tomgalan" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 FULL MODA. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="catalogo.js"></script>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
